@@ -1,0 +1,274 @@
+
+:root{
+  --colorBrown:#e08b6c;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+background-color:rgb(4, 0, 0) ;
+color: white;
+}
+.Website-header{
+padding: 50px;
+height: 200px;
+display: flex;
+flex-wrap: wrap;
+}
+.Website-header img{
+height:100px ;
+width: 100px;
+margin:0 10px  ;
+
+}
+.Website-header h1{
+ margin:10px 20px;
+ height: 50px;
+ text-align:center; 
+ color:rgb(200, 109, 109) ;
+}
+.social-icons{
+text-align:right ;
+flex-grow: 1;
+ ;
+}
+.social-icons i{
+    margin:10px 5px;
+    cursor: pointer;
+}
+nav{
+    background-color: black;
+    height:50px ;
+    margin-bottom:20px ;
+}
+nav ul{
+    margin:20px 0 0 0 ;
+}
+.navbar-nav li{
+  padding: 10px 10px;
+}
+.navbar-nav li a{
+   color:rgb(92, 92, 207) ;
+   font-size: 15px;
+   font-weight:800;
+}
+.navbar-nav li a:hover{
+color: var(--colorBrown);
+}
+.buying-project-section{
+    padding: 0 30px 0 60px;
+    display: flex;
+    height: 30px; 
+
+}
+#btext{
+    width: 200px;
+    font-size:16px ;
+    text-transform:uppercase ;
+    color: var(--colorBrown);
+    font-weight:600 ;
+    margin: auto 0;
+}
+.buying-project{
+
+   padding:0 30px ;
+   color:rgb(92, 92, 207);
+   font: weight 800; 
+   display: inline-block;
+}
+.buying-project:hover,.social-icons i:hover{
+   color:var(--colorBrown) ;
+   cursor:pointer ;
+}
+.bntime{
+   display:inline-block;
+   color:rgba(255,255,255,0.5) ;
+   padding:0 10px ;
+   font-size:12px ;
+}
+
+
+
+#popular-project{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 5%;  
+}
+#popular-project img{
+    width: 100%;
+    margin:0 10px ;
+    filter: brightness(0.7);
+}
+#popular-project h2{
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+}
+
+#featured h2{
+    background-color: black;
+}
+#latest h2{
+    background-color:darkred ;
+}
+#our-picks h2{
+    background-color:darkblue ;
+}
+.carousel, .project-container{
+    position:relative ;
+}
+
+#featured{
+    flex:2 ;
+}
+#latest,#our-picks{
+   flex:1 ; 
+}
+.news-container:hover{
+   cursor:pointer ;
+}
+.project-container:hover > .popular-project-text{
+    bottom:10px ;
+    height:50px ;
+    width: 50px;
+}
+
+
+
+.more-project{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content:space-around ;
+    color: #fff;
+    padding:0 5% ;
+    text-align: justify;
+
+}
+.more-project img{
+    width:100% ;
+}
+.project-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis:70% ;
+    justify-content:space-between ;
+}
+aside{
+    flex-basis:25% ;
+    padding:10px ;
+    border: 1px solid #fff;
+    margin:auto 0 ; 
+    border-radius:5px ;
+}
+.INDIA,.WEST-BENGAL{
+    flex-basis:45% ;
+}
+.INDIA h2{
+    background-color:#b2175b ;
+    padding:0 10px ;
+    margin:10px 0 0 0 ;
+}
+.WEST-BENGAL h2{
+    background-color:#3c1b75 ;
+    padding:0 10px ;
+    margin:10px 0 0 0 ;
+}
+.recent-project{
+    display: flex;
+}
+.recent-project img{
+    width: 70px;
+    height:70px ;
+    margin:10px ;
+}
+.recent-project p{
+    font-size:14px ;
+    font-weight: bold;
+    margin:auto ;
+}
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5% ;
+    justify-content: space-between;
+}
+.social-link section{
+    flex-basis:50% ;
+}
+.social-icones-footer i{
+    font: size 37px; 
+    padding:5px ;
+}
+
+.Instagram img{
+    padding:10px ;
+    height:150px ;
+    width:150px ;
+}
+.footer-button{
+    display: block;
+    border:1px solid #2196f3;
+    color: #2196f3;
+    font: size 14px; 
+    font-weight: bolder;
+    background-color: #fff;
+    margin:20px auto ;
+    padding:10px 20px ;
+    cursor:pointer ;
+}
+.footer-button:hover{
+    color: #fff;
+    background-color: #2196f3;
+}
+.copyright{
+    width:100% ;
+    background-color: black;
+    color: #fff;
+    padding:5px ;
+    text-align: center;
+}
+@media only screen and(max-width:600px){
+    .website-header img{
+        width:35px ;
+        height:35px ;
+        padding:5px ;
+    }
+    .website-header h1{
+        font-size:15px ;
+    }
+    .buying-project-section{
+        padding:5px ;
+        flex-wrap: wrap;
+        height:70px ;
+    }
+    .navbar-toggler-icon{
+        background-image:url(Image/menu.jpg) ;
+    }
+    .navbar-collapse{
+        background-color:black ;
+        z-index:16 ;
+    }
+    #featured{
+        flex: auto;
+    }
+    .project-section, .aside, .INDIA, .WEST-BENGAL,.social-link section{
+        flex-basis:100% ;
+
+    }
+    .social-link section{
+        padding:15px 0 ;
+    }
+    aside{
+        border-width:0 ;
+    }
+}
+
+
+
+
+
+
+
+
